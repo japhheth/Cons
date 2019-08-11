@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dropdown</title>
+<style type="text/css">
+    .container{
+        position: relative;
+        display: inline-block;
+        
+    }
+    .btn{
+        background-color: #00ff00;
+        border-radius: 5px;
+        padding: 10px 20px;
+        color: white;    
+    }
+    .drop-content{
+        display: none;
+        background-color: #f9f9f9;
+        width: 100%;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+    }
+
+    .drop-content a{
+        text-decoration: none;
+        color: black;
+        display: block;
+    }
+
+    .drop-content:hover{
+        background-color: grey;
+    }
+
+    .container:hover .drop-content{
+        display: block;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <button class="btn">Dropdown</button>
+        <div class="drop-content">
+            <a href="#"> list 1</a>
+            <a href="#"> list 2</a>
+            <a href="#"> list 3</a>
+        </div>
+    </div>
+</body>
+</html>
